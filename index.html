@@ -56,12 +56,32 @@ NavBar
     </nav>
 
 <!--============================================================-
+Title Splash
+==============================================================-->
+<br><br>
+
+<h1 align="center">Looking for housing?</h1>
+
+<!--============================================================-
+Search Bar
+==============================================================-->
+
+<br>
+
+<div id="centerDiv">
+  <input type="text" placeholder="Search..." required>
+  <input type="button" value="Search">
+</div>
+
+<br><br>
+
+<!--============================================================-
 Leafletjs Map
 ==============================================================-->
 
-<div id="mapid" style="width: 600px; height: 400px;" class="center"></div>
+<div id="mapid" style="width: 1200px; height: 550px;" class="center"></div>
 <script>
-  var mymap = L.map('mapid').setView([40.0371, -75.3436], 12);
+  var mymap = L.map('mapid').setView([40.0371, -75.3436], 13);
 
   L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
     maxZoom: 18,
@@ -72,6 +92,11 @@ Leafletjs Map
   }).addTo(mymap);
 </script>
 
+
+<!--============================================================-
+BEGIN SCRIPT COMMENT WORKAROUND
+==============================================================-->
+<script>/*
 
 <!--============================================================-
 Carousel
@@ -198,8 +223,11 @@ Carousel
 
       <!-- /END THE FEATURETTES -->
 
-
-
+<!--============================================================-
+END SCRIPT COMMENT WORKAROUND
+==============================================================-->
+</script>
+<br><br><br>
       <!-- FOOTER -->
       <footer>
         <p class="float-right"><a href="#">Back to top</a></p>

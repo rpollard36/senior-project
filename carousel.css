@@ -100,3 +100,7 @@ body {
     border: 3px white;
     padding: 10px;
 }
+
+#centerDiv{
+    text-align: center;
+}
